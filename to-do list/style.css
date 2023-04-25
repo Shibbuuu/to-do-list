@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: purple;
+}
+.to-do-list{
+   width: 500px;
+   position: absolute;
+   top: 100px;
+   left: 36%;
+   background: white;
+   border-radius: 10px;
+   padding: 40px 30px 70px;
+   border: none;
+   outline: none;
+   box-shadow: inset 5px 5px 10px black;
+   
+}
+.to-do-list h2{
+    color: blue;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.to-do-list img{
+    width: 30px;
+    margin-left: 10px;
+}
+.searchbox{
+    display: flex;
+    align-items: baseline;
+    
+    border-radius: 8px;
+    background: transparent;
+    margin-left: 20px;
+
+}
+.searchbox input{
+    width: 450px;
+    height: 35px;
+    padding-left: 20px;
+    padding-right: 10px;
+    color: blue;
+    background: transparent;
+    border-radius: 20px;
+    margin-right: 2px;
+    font-size: 13px;
+    box-shadow: 0 5px 10px #ccc;
+    border: none;
+    outline: none;
+    margin-left: 20px; 
+    margin-bottom: 20px;
+
+}
+.searchbox button{
+    cursor: pointer;
+    color: white;
+    background: indianred;
+    width: 80px;
+    height: 35px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0px 5px 10px #ccc;
+    outline: none;
+    border: none;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: #555;
+    align-items: center;
+}
+ul li::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li .checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+    
+    
+
+}
+ul li.checked::before{
+    background-image: url(images/checked.png);
+
+   
+
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    color: #555;
+    font-size: 28px;
+    border-radius: 50%;
+    text-align: center;
+    
+    
+
+
+}
+ul li span:hover{
+   
+    background:#edeef0;
+}
+
